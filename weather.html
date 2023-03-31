@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-6 text-center">
+          <div class="card location-card" style="max-width: 250px">
+            <form class="location" id="location-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter location"
+                  id="location-input"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <div class="btn-group customButton">
+            <a
+              href="#"
+              class="btn btn-primary active"
+              id="celsius-button"
+              aria-current="page"
+              >Celsius</a
+            >
+            <a href="#" class="btn btn-primary" id="fahrenheit-button"
+              >Fahrenheit</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 id="display-city">Paris</h1>
+          <div class="weatherIcon">🌤</div>
+          <div class="cityHeader">
+            <h2 id="displayed-temperature">30 °C</h2>
+            <span id="displayed-day">Day</span>
+            <span id="displayed-hour">Hour</span>:<span id="displayed-minutes"
+              >Minutes</span
+            >
+            |
+            <span id="displayed-date">Date</span>
+            <span id="displayed-month">Month</span> | <span id="displayed-weather-description">Sunny</span>
+          </div>
+          <div class="row flex-nowrap">
+            <div class="col-2 text-center todays-breakdown">
+              Now
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+            <div class="col-2 text-center todays-breakdown">
+              12
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+            <div class="col-2 text-center todays-breakdown">
+              13
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+            <div class="col-2 text-center todays-breakdown">
+              14
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+            <div class="col-2 text-center todays-breakdown">
+              15
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+            <div class="col-2 text-center todays-breakdown">
+              16
+              <br />
+              🌤
+              <br />
+              17 C
+            </div>
+          </div>
+        </div>
+        <div class="card weekly-card border-0">
+          <div class="row">
+            <div class="col-6">
+              Thursday
+              <br />
+              Friday
+              <br />
+              Saturday
+              <br />
+              Sunday
+              <br />
+              Monday
+              <br />
+              Tuesday
+              <br />
+              Wednesday
+            </div>
+            <div class="col-2 text-center">
+              🌤<br />🌤<br />🌤<br />🌤<br />🌤<br />🌤<br />🌤
+            </div>
+            <div class="col-2 text-center">
+              20°C<br />20°C<br />20°C<br />20°C<br />20°C<br />20°C<br />20°C<br />
+            </div>
+            <div class="col-2 text-center">
+              30°C<br />30°C<br />30°C<br />30°C<br />30°C<br />30°C<br />30°C<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
